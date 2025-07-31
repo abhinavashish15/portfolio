@@ -169,7 +169,7 @@ export const resumeData: ResumeData = {
         "Framer Motion",
       ],
       github: "https://github.com/abhinavashish15/portfolio",
-      live: "https://portfolio.vercel.app",
+      live: "https://abhinavashish-portfolio.vercel.app/",
       highlights: [
         "AI-powered chat assistant using CopilotKit",
         "Responsive design with dark mode support",
