@@ -54,12 +54,31 @@ cd portfolio-next
 npm install
 ```
 
-3. **Run the development server**:
+3. **Set up environment variables** (optional for AI chat):
+Create a `.env.local` file in the root directory:
+```bash
+NEXT_PUBLIC_COPILOT_API_KEY=your_copilot_api_key_here
+```
+
+4. **Run the development server**:
 ```bash
 npm run dev
 ```
 
-4. **Open your browser** and navigate to [http://localhost:3000](http://localhost:3000)
+5. **Open your browser** and navigate to [http://localhost:3000](http://localhost:3000)
+
+### Environment Variables
+
+The AI chat feature requires a CopilotKit API key. If you don't have one:
+
+- The app will work perfectly without the AI chat feature
+- The chat button will be hidden automatically
+- All other functionality remains intact
+
+To enable the AI chat:
+1. Sign up for CopilotKit at [copilotkit.ai](https://copilotkit.ai)
+2. Get your API key
+3. Add it to your environment variables
 
 ## 📁 Project Structure
 
@@ -148,6 +167,7 @@ The portfolio includes an AI-powered chat assistant built with CopilotKit:
 - **Contextual information**: Chat can provide details about your projects, skills, and background
 - **Professional interface**: Clean, modern chat UI with smooth animations
 - **Mobile responsive**: Works seamlessly on all devices
+- **Graceful fallback**: Works without API key (chat button hidden)
 
 ## 📱 Responsive Design
 
@@ -164,7 +184,16 @@ The portfolio is fully responsive with:
 
 1. Push your code to GitHub
 2. Connect your repository to Vercel
-3. Deploy automatically with zero configuration
+3. Add environment variables in Vercel dashboard (optional for AI chat)
+4. Deploy automatically with zero configuration
+
+### Environment Variables for Deployment
+
+If you want to enable the AI chat feature in production:
+
+1. **Vercel**: Add `NEXT_PUBLIC_COPILOT_API_KEY` in your project settings
+2. **Netlify**: Add the environment variable in your site settings
+3. **Other platforms**: Add the environment variable in your hosting platform's settings
 
 ### Other Platforms
 
