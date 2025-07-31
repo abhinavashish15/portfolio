@@ -5,10 +5,12 @@
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import Navbar from "@/app/components/Navbar";
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-monochrome-50 dark:bg-monochrome-900">
+      <Navbar />
       {/* header */}
       <div className="pt-16 pb-8">
         <div className="max-w-6xl mx-auto px-4">
@@ -103,7 +105,9 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <div className="p-6 relative overflow-hidden text-2xl font-bold">What I know:</div>
+            <div className="p-6 relative overflow-hidden text-2xl font-bold">
+              What I know:
+            </div>
             <div className="about-card p-6 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-monochrome-100 to-transparent dark:from-monochrome-800 dark:to-transparent rounded-full -translate-y-10 translate-x-10 opacity-30"></div>
               <h4 className="font-semibold mb-2 relative z-10">

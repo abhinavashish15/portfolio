@@ -5,10 +5,12 @@
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import Navbar from "@/app/components/Navbar";
 
 export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-monochrome-50 dark:bg-monochrome-900">
+      <Navbar />
       {/* header */}
       <div className="pt-16 pb-8">
         <div className="max-w-6xl mx-auto px-4">
@@ -40,11 +42,28 @@ export default function ProjectsPage() {
             {
               title: "Sorting Visualizer",
               description:
-                "An interactive tool that visually demonstrates sorting algorithms like Bubble Sort, Merge Sort, and Quick Sort using animations.",
+                "An interactive web-based tool that visually demonstrates the step-by-step execution of popular sorting algorithms such as Bubble Sort, Merge Sort, and Quick Sort through smooth, real-time animations. Users can control the speed of sorting, shuffle the array, and observe how each algorithm works internally.",
               tech: ["JavaScript", "HTML", "CSS", "React"],
               image: "/projects-snaps/sorting-algorithm.png",
               demo: "https://sorting-visualisation-one.vercel.app/",
               code: "https://github.com/abhinavashish15/Sorting-Visualisation",
+            },
+            {
+              title: "Portfolio Website",
+              description:
+                "A modern, responsive personal portfolio to showcase my projects, skills, and experience. Features an integrated AI CopilotChat assistant powered by CopilotKit for real-time interaction. Built with Next.js, Tailwind CSS, and Framer Motion, with smooth animations and dark mode support.",
+              tech: [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Framer Motion",
+                "CopilotKit",
+                "AI Integration",
+              ],
+              image: "/projects-snaps/portfolio.png",
+              demo: "https://abhinavashish-portfolio.vercel.app/",
+              code: "https://github.com/abhinavashish15/portfolio",
             },
           ].map((project, index) => (
             <motion.div

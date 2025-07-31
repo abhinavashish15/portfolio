@@ -79,12 +79,13 @@ export default function Navbar() {
           transition={{ duration: 0.3 }}
           className="md:hidden overflow-hidden"
         >
-          <div className="py-4 space-y-4">
+          <div className="py-4 space-y-4 bg-white/95 dark:bg-monochrome-950/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block w-full text-left text-monochrome-700 dark:text-monochrome-300 hover:text-monochrome-900 dark:hover:text-monochrome-400 transition-colors duration-200 font-medium py-2"
+                className="block w-full text-left text-monochrome-700 dark:text-monochrome-300 hover:text-monochrome-900 dark:hover:text-monochrome-400 transition-colors duration-200 font-medium py-2 px-4"
+                onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>

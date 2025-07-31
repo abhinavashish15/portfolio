@@ -3,12 +3,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowLeft, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { ArrowLeft, Mail, Linkedin, Github, Twitter } from "lucide-react";
 import Link from "next/link";
+import Navbar from "@/app/components/Navbar";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-monochrome-50 dark:bg-monochrome-900">
+      <Navbar />
+      {/* header */}
       <div className="pt-16 pb-8">
         <div className="max-w-6xl mx-auto px-4">
           <Link
@@ -27,7 +30,7 @@ export default function ContactPage() {
           >
             <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
             <p className="text-xl text-monochrome-600 dark:text-monochrome-300">
-              I'm always interested in new opportunities and exciting projects.
+              Let's work together
             </p>
           </motion.div>
         </div>

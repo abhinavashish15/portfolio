@@ -5,10 +5,12 @@
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import Navbar from "@/app/components/Navbar";
 
 export default function SkillsPage() {
   return (
     <main className="min-h-screen">
+      <Navbar />
       <div className="pt-16 pb-8">
         <div className="max-w-6xl mx-auto px-4">
           <Link
@@ -49,16 +51,15 @@ export default function SkillsPage() {
             { name: "Spring Boot", level: 30 },
             { name: "MongoDB", level: 50 },
             { name: "TensorFlow", level: 20 },
-            { name:"OpenCV", level: 20 },
+            { name: "OpenCV", level: 20 },
             { name: "Streamlit", level: 30 },
-            {name: "NumPy", level: 20 },
-            {name: "AWS", level: 40 },
+            { name: "NumPy", level: 20 },
+            { name: "AWS", level: 40 },
             { name: "Firebase", level: 60 },
             { name: "Supabase", level: 60 },
             { name: "REST API", level: 50 },
             { name: "Cursor AI", level: 70 },
             { name: "Git", level: 80 },
-            
           ].map((skill, index) => (
             <motion.div
               key={skill.name}
