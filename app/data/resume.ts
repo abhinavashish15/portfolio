@@ -54,7 +54,7 @@ export const resumeData: ResumeData = {
     location: "Bangalore, India",
     linkedin: "https://linkedin.com/in/abhinavashish15",
     github: "https://github.com/abhinavashish15",
-    website: "https://yourwebsite.com",
+    website: "https://abhinavashish-portfolio.vercel.app/",
   },
   summary:
     "Passionate Full-Stack Developer skilled in building scalable web apps, Chrome extensions, and AI-powered tools. Experienced with modern tech stacks like Next.js, React, Node.js, and Tailwind, with a focus on performance, clean code, and great user experience.",

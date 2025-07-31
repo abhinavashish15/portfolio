@@ -61,7 +61,7 @@ export default function Home() {
             >
               <ProfileImage
                 src="/profile-image.jpeg"
-                alt="Your Name - Full Stack Developer"
+                alt="Abhinav Ashish - Software Developer"
               />
             </motion.div>
           </div>

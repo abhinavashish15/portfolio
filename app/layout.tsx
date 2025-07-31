@@ -9,7 +9,7 @@ import ThemeToggle from "@/app/components/ThemeToggle";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Developer & Designer",
+  title: "Abhinav Ashish | Portfolio",
   description:
     "Personal portfolio showcasing my work in web development, design, and technology.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "react",
     "next.js",
   ],
-  authors: [{ name: "Your Name" }],
+  authors: [{ name: "Abhinav Ashish" }],
 };
 
 export const viewport = {
