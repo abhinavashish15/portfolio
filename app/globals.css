@@ -1,0 +1,52 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white dark:bg-monochrome-950 text-monochrome-900 dark:text-monochrome-50;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-monochrome-900 to-monochrome-600 bg-clip-text text-transparent;
+  }
+
+  .card {
+    @apply bg-white dark:bg-monochrome-900 rounded-2xl shadow-xl border border-monochrome-200/50 dark:border-monochrome-800/50 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] hover:border-monochrome-300 dark:hover:border-monochrome-700;
+  }
+
+  .btn-primary {
+    @apply bg-monochrome-900 hover:bg-monochrome-800 text-white font-medium px-6 py-3 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-monochrome-900 text-monochrome-700 hover:bg-monochrome-900 hover:text-white font-medium px-6 py-3 rounded-lg transition-colors duration-200;
+  }
+
+  .skill-card {
+    @apply bg-gradient-to-br from-white to-monochrome-50 dark:from-monochrome-900 dark:to-monochrome-800 rounded-2xl shadow-xl border border-monochrome-200/50 dark:border-monochrome-800/50 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] hover:border-monochrome-300 dark:hover:border-monochrome-700 hover:bg-gradient-to-br hover:from-white hover:to-monochrome-100 dark:hover:from-monochrome-800 dark:hover:to-monochrome-700;
+  }
+
+  .project-card {
+    @apply bg-gradient-to-br from-white to-monochrome-50 dark:from-monochrome-900 dark:to-monochrome-800 rounded-2xl shadow-xl border border-monochrome-200/50 dark:border-monochrome-800/50 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] hover:border-monochrome-300 dark:hover:border-monochrome-700 overflow-hidden;
+  }
+
+  .about-card {
+    @apply bg-gradient-to-br from-white to-monochrome-50 dark:from-monochrome-900 dark:to-monochrome-800 rounded-2xl shadow-xl border border-monochrome-200/50 dark:border-monochrome-800/50 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] hover:border-monochrome-300 dark:hover:border-monochrome-700;
+  }
+
+  .contact-card {
+    @apply bg-gradient-to-br from-white to-monochrome-50 dark:from-monochrome-900 dark:to-monochrome-800 rounded-2xl shadow-xl border border-monochrome-200/50 dark:border-monochrome-800/50 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] hover:border-monochrome-300 dark:hover:border-monochrome-700;
+  }
+}
