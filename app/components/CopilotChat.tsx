@@ -19,7 +19,7 @@ export default function CopilotChat() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hello! I'm your AI assistant. What would you like to know about me?",
+      text: "Hello! I'm Abhinav's AI assistant. What would you like to know about me?",
       sender: "ai",
       timestamp: new Date(),
     },

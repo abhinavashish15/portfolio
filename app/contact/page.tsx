@@ -14,13 +14,13 @@ export default function ContactPage() {
       {/* header */}
       <div className="pt-16 pb-8">
         <div className="max-w-6xl mx-auto px-4">
-          <Link
+          {/* <Link
             href="/"
             className="inline-flex items-center gap-2 text-monochrome-600 dark:text-monochrome-300 hover:text-monochrome-900 dark:hover:text-monochrome-100 transition-colors mb-8"
           >
             <ArrowLeft className="w-5 h-5" />
             Back to Home
-          </Link>
+          </Link> */}
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
